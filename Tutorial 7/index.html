@@ -5,18 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Forms - learn to make forms</title>
 </head>
+
+
 <body>
   
   <h1>Form for MDM</h1>
+  <div>
   <label for="username">Enter your name</label>
-  <input type="text" id="username" name="username" placeholder="Enter your name ">
+  <input type="text" id="username" name="username" placeholder="Enter your name " autofocus>
+  </div>
 
+  <div>
   <input type="radio" id="male" name="gender" value="male">
   <label for="male">Male</label>
   <input type="radio" id="female" name="gender" value="female" >
   <label for="female">Female</label>
+  </div>
 
-
+  <div>
+    <input type="checkbox" name="Subscribe" id="followers" value="yes">
+    <label for="followers">Subscribe to wannabe_engineer</label>
+  </div>
   
+
+  <div>
+    <label for="comment">Enter yout comment here ...</label><br>
+    <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+  </div>
+
+  <div>
+    <select name="fruits" >
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="grapes">Grapes</option>
+      <option value="cherry">Cherry</option>
+    </select>
+  </div>
 </body>
 </html>
