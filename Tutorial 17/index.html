@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors</title>
+  <style>
+    /* div{
+      background-color: green;
+    } */
+
+    /* class selector */
+
+    .purple {
+      background-color: purple;
+      font-size: larger;
+      color: yellow;
+    }
+
+    /* ID selector */
+    #green {
+      background-color: red;
+      color: antiquewhite;
+    }
+
+    /* child selector */
+    .grey>p {
+      background-color: grey;
+      color: pink;
+      font-size: x-small;
+    }
+
+    /* descendant selectors */
+    .orange p {
+      background-color: rgb(103, 71, 12);
+      color: rgb(229, 173, 183);
+      font-size: x-small;
+    }
+
+    /* universal selectors  */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* pseudo selector */
+    a:visited {
+      color: pink;
+    }
+
+    a:link {
+      color: palevioletred;
+    }
+
+    a:hover {
+      color: beige;
+    }
+
+    a:active {
+      color: bisque;
+    }
+
+    p:first-child {
+      background-color: rgb(73, 176, 176);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="one">
+    <p>i am first child</p>
+    <p>I am second child</p>
+  </main>
+
+  <div>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe voluptatem molestias aspernatur quas facilis
+    consequatur, tempora quam, nam aut culpa vel? In earum laborum, nobis doloremque officia illum deleniti
+    perspiciatis?
+  </div>
+  <br><br><br>
+
+  <div class="purple">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam omnis voluptates esse inventore quibusdam quod,
+    doloremque a molestiae temporibus deleniti ipsa tenetur? Exercitationem, perferendis sapiente minima laborum
+    voluptas accusantium ex.
+  </div>
+  <br><br>
+
+  <div id="green">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fuga doloribus dolore error? Non corrupti beatae
+    quam in placeat ea voluptate provident, dolorem, aut reiciendis, cum autem! Nostrum, dignissimos natus.
+  </div>
+
+  <div class="grey">
+
+    Hi this is another division
+    And below it will be para now Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dignissimos vero,
+    est provident hic placeat qui natus sed magnam sint non consequuntur veritatis perspiciatis laborum eligendi dicta a
+    ea modi!
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non voluptatum accusamus reprehenderit deleniti, velit
+      eum reiciendis voluptatibus perspiciatis fugit cumque voluptatem? Esse sed ipsam hic natus unde, voluptate dolores
+      voluptas quidem? Similique magnam at nemo fugiat corporis expedita cumque porro sequi unde molestiae accusantium,
+      maxime itaque a nisi nam, voluptatibus dolorem quaerat laboriosam mollitia nihil, maiores ea molestias! Eos facere
+      tempora minima enim dignissimos nisi voluptas, tenetur reiciendis amet aspernatur, tempore harum perferendis at
+      optio deserunt cum impedit sequi cumque. Accusamus eaque, necessitatibus explicabo impedit numquam molestiae
+      reprehenderit rem qui tenetur delectus! Adipisci suscipit consequatur, itaque, animi dicta optio nam voluptatem
+      veniam perferendis cupiditate rem fuga aperiam quo consectetur temporibus molestias sint pariatur nulla eveniet
+      quaerat quasi. Excepturi doloremque, cumque magni sequi fuga animi id quibusdam neque totam dolor minus a enim
+      fugiat adipisci quae maiores eligendi eius soluta hic? Ullam quae facilis saepe porro, repellendus quidem atque
+      non ab.</p>
+
+    <article>
+      <p>This inside of div and inside of article and hence the porperty will not be applied here .</p>
+    </article>
+  </div>
+
+  <div class="orange">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo eos eaque pariatur, quos accusantium aliquid
+      facere mollitia repellat perferendis quod.</p>
+
+    <article>
+      <p>
+        This is a para inside div inside article and yet all properties are applied to it
+      </p>
+    </article>
+  </div>
+
+
+  <a href="http://Google.com">This is link 1</a>
+  <a href="http://faceBook.com">This is link 2</a>
+</body>
+
+</html>
