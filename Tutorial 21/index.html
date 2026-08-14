@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS specifity</title>
+  <style>
+    h1 {
+      color: aqua;
+    }
+
+     .cred {
+      color:aquamarine
+    }
+
+    .red {
+      color: aqua;
+    }
+
+    .cpurple {
+      color: blue;
+    } 
+
+    [data-x=a]{
+      color: burlywood;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1 class="red cred cpurple">
+      Hi this is a code
+    </h1>
+
+    <h1 style="color: brown;">
+      Hi this is a code
+    </h1>
+
+    <h1 data-x="a">
+      Hi this is a code
+    </h1>
+  </div>
+</body>
+</html>
