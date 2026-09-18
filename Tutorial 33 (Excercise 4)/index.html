@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi colored Nav bar</title>
+  <style>
+
+    :root{
+      --color1 : rgb(234, 134, 134) ;
+      --color2 : rgb(236, 106, 106) ;
+      --color3 : rgb(32, 32, 141);
+      --color4 : rgb(199, 233, 47);
+    }
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    .box{
+      background-color: var(--color3);
+      padding: 25px;
+      margin: 25px;
+      width: 400px ;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 4px;
+    }
+
+    ul{
+      display: flex;
+    }
+
+    ul li:first-child{
+      --color2 : rgb(239, 7, 7);
+      --color1 : rgb(225, 201, 201);
+      background-color: var(--color2);
+      border: 1px solid var(--color1);
+      color: var(--color4);
+
+    }
+    li{
+      list-style: none;
+      padding: 5px;
+      width: 100px;
+      height: 30px;
+      border: 1px solid var(--color4);
+      align-content: center;
+      border-radius: 3px;
+      color: var(--color3);
+      background-color: var(--color2);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <ul>
+      <li>Name</li>
+      <li>Home</li>
+      <li>ABout us</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+</body>
+</html>
