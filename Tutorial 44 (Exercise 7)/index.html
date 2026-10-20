@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 7</title>
+  <style>
+    .logo {
+       width: 40px;
+      height: 23px;
+      background-color: rgb(168, 216, 22); 
+    }
+
+    .logo img {
+      height: 65px;
+      width: 70px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .right ul {
+      display: flex;
+      gap: 34px;
+    }
+
+    .right ul li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .right ul li img {
+      width: 30px;
+      height: 16px;
+    }
+
+    .right ul li span{
+      padding: 9px;
+    }
+.main{
+  
+  display: flex;
+  padding-top: 60px;
+  padding-left: 40px;
+  gap: 10px;
+  justify-content: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: baseline;
+
+}
+    .para{
+      color: rgb(106, 106, 107);
+      font-size: 25px;
+      text-align: center;
+    }
+    .para2{
+      color: rgb(106, 106, 107);
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .boxes{
+      margin:  0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      /* justify-content: center; */
+      max-width: 1000px;
+      
+      
+    }
+
+    .box1{
+      padding-top: 15px;
+      width: 282px;
+      height: 150px;
+      background-color: rgb(183, 185, 186);
+      padding: 10px;
+      margin: 25px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 400;
+      gap: 10px;
+      
+    }
+
+    .download-blue{
+      width: 110px;
+      height: 50px;
+      background-color: rgb(159, 159, 226);
+      color: white;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: end;
+    }
+
+    .download-green{
+      width: 110px;
+      height: 50px;
+      background-color: rgb(77, 210, 108);
+      color: white;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYz0tIkFdHsySJLkCWCjS5E7Kg58Hjgo538uGSFsG0QA&s=10"
+          alt="">
+      </div>
+      <div class="right">
+        <ul>
+          <li><span>Products</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"></path>
+            </svg></li>
+          <li><span>Resources</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"></path>
+            </svg></li>
+          <li><span>Piricing </span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"></path>
+            </svg></li>
+          <li><span>About Us </span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"></path>
+            </svg></li>
+          <li><img src="https://cdn-icons-png.flaticon.com/512/9293/9293128.png" alt="image logo" alt=""></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="logo"></div>
+    <div class="para">DownLoad UltraEdit </div>
+    <div class="para2">v2023.1(released 08/16/2023) | Hotfix</div>
+  </div>
+
+  <div class="boxes">
+    <div class="box1">English  <div class="button"> <div class="download-blue"> Download 32-bit</div> <div class="download-green">Download 64-bit</div>  </div> </div>
+    <div class="box1">Deutsch  <div class="button"><div class="download-blue">Download 32-bit</div> <div class="download-green">Download 64-bit</div> </div> </div>
+    <div class="box1">Italino  <div class="button"><div class="download-blue">Download 32-bit</div> <div class="download-green">Download 64-bit</div> </div> </div>
+    <div class="box1">Expanol <div class="button"> <div class="download-blue">Download 32-bit</div> <div class="download-green">Download 64-bit</div> </div> </div>
+    <div class="box1">French <div class="button" > <div class="download-blue">Download 32-bit</div> <div class="download-green">Download 64-bit</div> </div> </div>
+    <div class="box1">Portugese <div class="button"> <div class="download-blue">Download 32-bit</div> <div class="download-green">Download 64-bit</div> </div> </div>
+    <div class="box1">Chinese  <div class="button"> <div class="download-blue">Download 32-bit</div> <div class="download-green">Download 64-bit</div> </div> </div>
+    <div class="box1">Marathi <div class="button"> <div class="download-blue">Download 32-bit</div> <div class="download-green">Download 64-bit</div> </div> </div>
+    <div class="box1">Hindi  <div class="button"><div class="download-blue">Download 32-bit</div> <div class="download-green">Download 64-bit</div> </div> </div>
+    <div class="box1">Gujrati <div class="button"> <div class="download-blue">Download 32-bit</div> <div class="download-green">Download 64-bit</div> </div> </div>
+
+
+  </div>
+</body>
+
+</html>
